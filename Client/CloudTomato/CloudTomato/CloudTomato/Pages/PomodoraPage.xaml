@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloudTomato.Pages.PomodoraPage">
+    
+    <ContentPage.Content>
+        <Grid Padding="20">
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding TimeDisplay}" HorizontalTextAlignment="Center" FontSize="75"/>
+                <Label Text="{Binding StatusText}" HorizontalTextAlignment="Center" FontSize="19"/>
+
+                <Button Text="{Binding ToggleButtonText}" Command="{Binding ToggleSessionCommand}" Margin="0,45,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="End">
+                <BoxView Color="GreenYellow" WidthRequest="35" HeightRequest="35"/>
+                <Label Text="Settings" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Start">
+                <BoxView Color="DodgerBlue" WidthRequest="35" HeightRequest="35"/>
+                <Label Text="Projects" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+                <BoxView Color="OrangeRed" WidthRequest="35" HeightRequest="35"/>
+                <Label Text="Reports" VerticalOptions="Center"/>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
